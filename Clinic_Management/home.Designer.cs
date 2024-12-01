@@ -148,7 +148,7 @@
             // 
             this.pictureBox1.Image = global::Clinic_Management.Properties.Resources.login;
             this.pictureBox1.InitialImage = global::Clinic_Management.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(116, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
