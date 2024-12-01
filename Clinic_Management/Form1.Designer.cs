@@ -45,7 +45,6 @@
             this.label1.Size = new System.Drawing.Size(92, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
-        //    this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtname
             // 
@@ -53,7 +52,6 @@
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(100, 22);
             this.txtname.TabIndex = 1;
-         //   this.txtname.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtpass
             // 
@@ -61,7 +59,7 @@
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(100, 22);
             this.txtpass.TabIndex = 2;
-           // this.txtpass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtpass.UseSystemPasswordChar = true;
             // 
             // btnlogin
             // 
