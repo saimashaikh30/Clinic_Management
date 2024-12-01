@@ -49,7 +49,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
+            this.button3.BackColor = System.Drawing.Color.AliceBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(775, 291);
             this.button3.Name = "button3";
@@ -60,7 +60,7 @@
             // 
             // btnMedicine
             // 
-            this.btnMedicine.BackColor = System.Drawing.Color.Coral;
+            this.btnMedicine.BackColor = System.Drawing.Color.AliceBlue;
             this.btnMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedicine.Location = new System.Drawing.Point(572, 291);
             this.btnMedicine.Name = "btnMedicine";
@@ -72,7 +72,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
+            this.button1.BackColor = System.Drawing.Color.AliceBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(351, 291);
             this.button1.Name = "button1";
