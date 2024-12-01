@@ -57,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1380, 789);
+            this.panel1.Size = new System.Drawing.Size(961, 637);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -68,7 +68,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1380, 46);
+            this.panel2.Size = new System.Drawing.Size(961, 46);
             this.panel2.TabIndex = 2;
             // 
             // label3
@@ -90,7 +90,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1380, 789);
+            this.panel3.Size = new System.Drawing.Size(961, 637);
             this.panel3.TabIndex = 3;
             // 
             // panel4
@@ -106,7 +106,7 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(123, 67);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(413, 609);
+            this.panel4.Size = new System.Drawing.Size(413, 537);
             this.panel4.TabIndex = 0;
             // 
             // button1
@@ -198,12 +198,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1380, 789);
+            this.ClientSize = new System.Drawing.Size(961, 637);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Name = "Home";
             this.RightToLeftLayout = true;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
