@@ -50,7 +50,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1223, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(1060, 58);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,7 +88,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 58);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1223, 693);
+            this.panel1.Size = new System.Drawing.Size(1060, 692);
             this.panel1.TabIndex = 2;
             // 
             // MedicineCommon
@@ -98,7 +98,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MedicineCommon";
-            this.Size = new System.Drawing.Size(1223, 751);
+            this.Size = new System.Drawing.Size(1060, 750);
             this.Load += new System.EventHandler(this.Medicine_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

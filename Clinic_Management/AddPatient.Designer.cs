@@ -68,7 +68,7 @@
             this.AddPatientPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddPatientPanel.Location = new System.Drawing.Point(0, 0);
             this.AddPatientPanel.Name = "AddPatientPanel";
-            this.AddPatientPanel.Size = new System.Drawing.Size(1094, 667);
+            this.AddPatientPanel.Size = new System.Drawing.Size(1060, 750);
             this.AddPatientPanel.TabIndex = 0;
             this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
@@ -90,7 +90,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1094, 61);
+            this.panel1.Size = new System.Drawing.Size(1060, 61);
             this.panel1.TabIndex = 15;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -248,7 +248,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.AddPatientPanel);
             this.Name = "AddPatient";
-            this.Size = new System.Drawing.Size(1094, 667);
+            this.Size = new System.Drawing.Size(1060, 750);
             this.Load += new System.EventHandler(this.AddPatient_Load);
             this.AddPatientPanel.ResumeLayout(false);
             this.AddPatientPanel.PerformLayout();

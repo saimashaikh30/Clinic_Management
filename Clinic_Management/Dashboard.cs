@@ -31,9 +31,9 @@ namespace Clinic_Management
 
         private void btnMedicine_Click(object sender, EventArgs e)
         {
-            //MedicineCommon medicine = new MedicineCommon();
-            //dashboardPanel.Controls.Clear();
-            //dashboardPanel.Controls.Add(medicine);
+            MedicineCommon medicine = new MedicineCommon();
+            dashboardPanel.Controls.Clear();
+            dashboardPanel.Controls.Add(medicine);
         }
 
         private void dashboardPanel_Paint(object sender, PaintEventArgs e)
