@@ -56,10 +56,10 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(961, 637);
+            this.panel1.Size = new System.Drawing.Size(1081, 796);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -67,8 +67,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(961, 46);
+            this.panel2.Size = new System.Drawing.Size(1081, 58);
             this.panel2.TabIndex = 2;
             // 
             // label3
@@ -76,9 +77,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(3, 15);
+            this.label3.Location = new System.Drawing.Point(3, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(128, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Clinic Name";
             // 
@@ -89,9 +90,11 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(961, 637);
+            this.panel3.Size = new System.Drawing.Size(1081, 796);
             this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel4
             // 
@@ -104,9 +107,10 @@
             this.panel4.Controls.Add(this.txtUsername);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(123, 67);
+            this.panel4.Location = new System.Drawing.Point(160, 106);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(413, 537);
+            this.panel4.Size = new System.Drawing.Size(465, 671);
             this.panel4.TabIndex = 0;
             // 
             // button1
@@ -114,9 +118,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(160, 382);
+            this.button1.Location = new System.Drawing.Point(180, 478);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 44);
+            this.button1.Size = new System.Drawing.Size(112, 55);
             this.button1.TabIndex = 7;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
@@ -126,9 +131,10 @@
             // 
             this.pictureBox3.Image = global::Clinic_Management.Properties.Resources.password;
             this.pictureBox3.InitialImage = global::Clinic_Management.Properties.Resources.login;
-            this.pictureBox3.Location = new System.Drawing.Point(42, 319);
+            this.pictureBox3.Location = new System.Drawing.Point(47, 399);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 36);
+            this.pictureBox3.Size = new System.Drawing.Size(34, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -137,9 +143,10 @@
             // 
             this.pictureBox2.Image = global::Clinic_Management.Properties.Resources.user;
             this.pictureBox2.InitialImage = global::Clinic_Management.Properties.Resources.login;
-            this.pictureBox2.Location = new System.Drawing.Point(42, 225);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 281);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(34, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -148,9 +155,10 @@
             // 
             this.pictureBox1.Image = global::Clinic_Management.Properties.Resources.login;
             this.pictureBox1.InitialImage = global::Clinic_Management.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(116, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(130, 64);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -158,17 +166,19 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(90, 319);
+            this.txtPassword.Location = new System.Drawing.Point(101, 399);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(265, 36);
+            this.txtPassword.Size = new System.Drawing.Size(298, 41);
             this.txtPassword.TabIndex = 3;
             // 
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(90, 225);
+            this.txtUsername.Location = new System.Drawing.Point(101, 281);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(265, 36);
+            this.txtUsername.Size = new System.Drawing.Size(298, 41);
             this.txtUsername.TabIndex = 2;
             // 
             // label2
@@ -176,9 +186,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label2.Location = new System.Drawing.Point(87, 300);
+            this.label2.Location = new System.Drawing.Point(98, 375);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 16);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -187,20 +197,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(87, 206);
+            this.label1.Location = new System.Drawing.Point(98, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(961, 637);
+            this.ClientSize = new System.Drawing.Size(1081, 796);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Home";
             this.RightToLeftLayout = true;
             this.Text = "Login";
