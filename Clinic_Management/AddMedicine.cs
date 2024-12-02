@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Clinic_Management
 {
-    public partial class AddPrescription : UserControl
+    public partial class AddMedicine : UserControl
     {
-        public AddPrescription()
+        public AddMedicine()
         {
             InitializeComponent();
         }
 
-        private void AddPrescription_Load(object sender, EventArgs e)
+        private void AddMedicine_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
