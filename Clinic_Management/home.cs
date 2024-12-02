@@ -12,26 +12,27 @@ namespace Clinic_Management
 
      
 
-        private void btnlogin_Click(object sender, EventArgs e)
-        {
-           
-        }
-
+       
         private void Home_Load(object sender, EventArgs e)
         {
             
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            panel1.Controls.Clear();
-            panel1.Controls.Add(dashboard);
+            //if (txtUsername.Text == "Admin" && txtPassword.Text == "Admin123")
+            //{
+                Dashboard dashboard = new Dashboard();
+                panel1.Controls.Clear();
+                panel1.Controls.Add(dashboard);
+            //}
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
