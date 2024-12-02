@@ -135,6 +135,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMedicine.Designer.cs">
+      <DependentUpon>AddMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +165,13 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="MedicineCommon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedicineCommon.Designer.cs">
+      <DependentUpon>MedicineCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Patient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +180,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowMedicine.Designer.cs">
+      <DependentUpon>ShowMedicine.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddMedicine.resx">
+      <DependentUpon>AddMedicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPatient.resx">
       <DependentUpon>AddPatient.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +201,16 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MedicineCommon.resx">
+      <DependentUpon>MedicineCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.AddPatient.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.AddPrescription.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.Dashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.Home.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.Medicine.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.Patient.resources" />
+    <EmbeddedResource Include="obj\Debug\Clinic_Management.Properties.Resources.resources" />
     <EmbeddedResource Include="Patient.resx">
       <DependentUpon>Patient.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +224,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShowMedicine.resx">
+      <DependentUpon>ShowMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Clinic_Management.exe.config" />
+    <None Include="obj\Debug\Clinic_M.346E1C57.Up2Date" />
+    <None Include="obj\Debug\Clinic_Management.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Clinic_Management.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Clinic_Management.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -217,6 +259,73 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Clinic_Management.exe" />
+    <Content Include="bin\Debug\Clinic_Management.pdb" />
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="bin\Debug\Microsoft.Bcl.HashCode.dll" />
+    <Content Include="bin\Debug\Microsoft.Bcl.HashCode.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Binder.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Binder.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Options.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Options.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="bin\Debug\Npgsql.dll" />
+    <Content Include="bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll" />
+    <Content Include="bin\Debug\Npgsql.xml" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Content Include="bin\Debug\System.Buffers.xml" />
+    <Content Include="bin\Debug\System.Collections.Immutable.dll" />
+    <Content Include="bin\Debug\System.Collections.Immutable.xml" />
+    <Content Include="bin\Debug\System.ComponentModel.Annotations.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Content Include="bin\Debug\System.Memory.xml" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\Debug\System.Text.Encodings.Web.xml" />
+    <Content Include="bin\Debug\System.Text.Json.dll" />
+    <Content Include="bin\Debug\System.Text.Json.xml" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+    <Content Include="obj\Debug\Clinic_Management.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Clinic_Management.exe" />
+    <Content Include="obj\Debug\Clinic_Management.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
