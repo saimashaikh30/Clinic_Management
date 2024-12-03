@@ -33,13 +33,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,11 +47,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtCompany);
-            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.txtStock);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -76,6 +76,7 @@
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save Details";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox1
             // 
@@ -105,14 +106,6 @@
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(281, 36);
             this.txtCompany.TabIndex = 10;
-            // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(647, 405);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(281, 36);
-            this.txtDate.TabIndex = 9;
             // 
             // txtStock
             // 
@@ -174,6 +167,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Medicine Name: ";
             // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(647, 405);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(281, 36);
+            this.txtDate.TabIndex = 14;
+            // 
             // AddMedicine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,7 +194,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtCompany;
-        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -203,5 +203,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DateTimePicker txtDate;
     }
 }

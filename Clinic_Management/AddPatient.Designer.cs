@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.AddPatientPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
@@ -51,7 +51,7 @@
             // AddPatientPanel
             // 
             this.AddPatientPanel.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.AddPatientPanel.Controls.Add(this.button1);
+            this.AddPatientPanel.Controls.Add(this.btnSave);
             this.AddPatientPanel.Controls.Add(this.panel1);
             this.AddPatientPanel.Controls.Add(this.btnClear);
             this.AddPatientPanel.Controls.Add(this.btnCancel);
@@ -72,16 +72,16 @@
             this.AddPatientPanel.TabIndex = 0;
             this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(98, 497);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 52);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(98, 497);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(150, 52);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -275,6 +275,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
     }
 }

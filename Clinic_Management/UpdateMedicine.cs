@@ -32,9 +32,12 @@ namespace Clinic_Management
 
         }
 
-        public void setDetails(string s)
+        public void setDetails(string medicineName, string companyName, string stock, string expiryDate)
         {
-            txtName.Text=s.ToString();
+            txtName.Text=medicineName.ToString();
+            txtCompany.Text=companyName.ToString();
+            txtStock.Text=stock.ToString();
+            txtDate.Text=expiryDate.ToString();
         } 
     }
 }

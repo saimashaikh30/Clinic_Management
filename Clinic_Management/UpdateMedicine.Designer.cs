@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtCompany = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txtCompany);
-            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.txtStock);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -61,17 +61,18 @@
             this.panel1.Size = new System.Drawing.Size(1060, 750);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label1.Location = new System.Drawing.Point(283, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(479, 39);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Update Medicine Information";
+            this.button1.BackColor = System.Drawing.Color.SandyBrown;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.button1.Location = new System.Drawing.Point(797, 283);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 56);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtCompany
             // 
@@ -80,14 +81,6 @@
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(281, 36);
             this.txtCompany.TabIndex = 18;
-            // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(386, 419);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(281, 36);
-            this.txtDate.TabIndex = 17;
             // 
             // txtStock
             // 
@@ -149,18 +142,25 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Medicine Name: ";
             // 
-            // button1
+            // label1
             // 
-            this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(797, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 56);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label1.Location = new System.Drawing.Point(283, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(479, 39);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Update Medicine Information";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(373, 419);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(294, 36);
+            this.txtDate.TabIndex = 20;
             // 
             // UpdateMedicine
             // 
@@ -181,7 +181,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCompany;
-        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -189,5 +188,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker txtDate;
     }
 }
