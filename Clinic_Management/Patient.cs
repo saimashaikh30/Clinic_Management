@@ -25,7 +25,7 @@ namespace Clinic_Management
         private void Patient_Load(object sender, EventArgs e)
         {
             
-            adapter=new NpgsqlDataAdapter("select * from Patients;", conn);
+            adapter=new NpgsqlDataAdapter("select * from Patients order by patient_id desc;", conn);
             ds = new DataSet();
             adapter.Fill(ds);
             DataGridViewLinkColumn linkColumn = new DataGridViewLinkColumn
@@ -84,30 +84,10 @@ namespace Clinic_Management
             this.Dock= DockStyle.Fill;
             this.Controls.Add(addPatient);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
-//  DataTable dataTable = ds.Tables[0];
-//  if(!dataTable.Columns.Contains("Prescription"))
-//  {
-//      dataTable.Columns.Add("Prescription",typeof(string));
-//  }
-//  foreach(DataRow row in dataTable.Rows)
-//  {
-//      row["Prescription"] = "Add";
-//  }
-//  if (!dataTable.Columns.Contains("Details"))
-//  {
-//      dataTable.Columns.Add("Details", typeof(string));
-//  }
-//  foreach (DataRow row in dataTable.Rows)
-//  {
-//      row["Details"] = "View";
-
-//  }
-//  dataGridView1.Columns["Prescription"].DefaultCellStyle.ForeColor=Color.AliceBlue;
-////  dataGridView1.Columns["Details"].DefaultCellStyle.ForeColor = Color.Blue;
-/// //DataGridViewLinkColumn column = new DataGridViewLinkColumn()
-//{
-//    Name="Link Column",
-//    HeaderText =""
-//};

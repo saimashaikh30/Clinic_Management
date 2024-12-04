@@ -30,10 +30,11 @@
         {
             this.AddPatientPanel = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cmbGender = new System.Windows.Forms.ComboBox();
-            this.txtaddr = new System.Windows.Forms.TextBox();
             this.txtcontact = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -42,8 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.AddPatientPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,13 +50,12 @@
             // AddPatientPanel
             // 
             this.AddPatientPanel.AutoScroll = true;
-            this.AddPatientPanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.AddPatientPanel.BackColor = System.Drawing.Color.PowderBlue;
             this.AddPatientPanel.Controls.Add(this.btnSave);
             this.AddPatientPanel.Controls.Add(this.panel1);
             this.AddPatientPanel.Controls.Add(this.btnClear);
             this.AddPatientPanel.Controls.Add(this.btnCancel);
             this.AddPatientPanel.Controls.Add(this.cmbGender);
-            this.AddPatientPanel.Controls.Add(this.txtaddr);
             this.AddPatientPanel.Controls.Add(this.txtcontact);
             this.AddPatientPanel.Controls.Add(this.txtAge);
             this.AddPatientPanel.Controls.Add(this.txtName);
@@ -68,30 +66,56 @@
             this.AddPatientPanel.Controls.Add(this.label1);
             this.AddPatientPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddPatientPanel.Location = new System.Drawing.Point(0, 0);
+            this.AddPatientPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddPatientPanel.Name = "AddPatientPanel";
-            this.AddPatientPanel.Size = new System.Drawing.Size(1060, 750);
+            this.AddPatientPanel.Size = new System.Drawing.Size(1192, 938);
             this.AddPatientPanel.TabIndex = 0;
-            this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnSave.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(98, 497);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(27, 389);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 52);
+            this.btnSave.Size = new System.Drawing.Size(169, 65);
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1192, 76);
+            this.panel1.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(422, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(246, 44);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Add Patients";
+            // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnClear.BackColor = System.Drawing.Color.CadetBlue;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(588, 497);
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(559, 389);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(150, 52);
+            this.btnClear.Size = new System.Drawing.Size(177, 65);
             this.btnClear.TabIndex = 13;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -99,11 +123,13 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancel.BackColor = System.Drawing.Color.CadetBlue;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(360, 497);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(294, 389);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(150, 52);
+            this.btnCancel.Size = new System.Drawing.Size(169, 65);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -116,141 +142,103 @@
             this.cmbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(360, 268);
+            this.cmbGender.Location = new System.Drawing.Point(311, 230);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(378, 37);
+            this.cmbGender.Size = new System.Drawing.Size(425, 44);
             this.cmbGender.TabIndex = 10;
             this.cmbGender.Text = "Male";
-            this.cmbGender.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
-            // 
-            // txtaddr
-            // 
-            this.txtaddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaddr.Location = new System.Drawing.Point(360, 329);
-            this.txtaddr.Multiline = true;
-            this.txtaddr.Name = "txtaddr";
-            this.txtaddr.Size = new System.Drawing.Size(378, 35);
-            this.txtaddr.TabIndex = 9;
-            this.txtaddr.TextChanged += new System.EventHandler(this.txtaddr_TextChanged);
             // 
             // txtcontact
             // 
             this.txtcontact.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontact.Location = new System.Drawing.Point(360, 398);
+            this.txtcontact.Location = new System.Drawing.Point(311, 303);
+            this.txtcontact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtcontact.Name = "txtcontact";
-            this.txtcontact.Size = new System.Drawing.Size(378, 36);
+            this.txtcontact.Size = new System.Drawing.Size(425, 41);
             this.txtcontact.TabIndex = 7;
-            this.txtcontact.TextChanged += new System.EventHandler(this.txtcontact_TextChanged);
             // 
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(360, 196);
+            this.txtAge.Location = new System.Drawing.Point(311, 163);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(378, 36);
+            this.txtAge.Size = new System.Drawing.Size(425, 41);
             this.txtAge.TabIndex = 6;
-            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtName.Location = new System.Drawing.Point(360, 133);
+            this.txtName.Location = new System.Drawing.Point(311, 95);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(378, 36);
+            this.txtName.Size = new System.Drawing.Size(425, 41);
             this.txtName.TabIndex = 5;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(93, 405);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(21, 308);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(227, 29);
+            this.label5.Size = new System.Drawing.Size(262, 36);
             this.label5.TabIndex = 4;
             this.label5.Text = "Contact Number: ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.Location = new System.Drawing.Point(93, 335);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(21, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 29);
+            this.label4.Size = new System.Drawing.Size(0, 36);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Address: ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(93, 271);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(21, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 29);
+            this.label3.Size = new System.Drawing.Size(138, 36);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gender: ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(93, 203);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(21, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 29);
+            this.label2.Size = new System.Drawing.Size(90, 36);
             this.label2.TabIndex = 1;
             this.label2.Text = "Age: ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(93, 140);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(21, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 29);
+            this.label1.Size = new System.Drawing.Size(222, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patient Name: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label6.Location = new System.Drawing.Point(375, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 37);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Add Patients";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 61);
-            this.panel1.TabIndex = 15;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // AddPatient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.AddPatientPanel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddPatient";
-            this.Size = new System.Drawing.Size(1060, 750);
+            this.Size = new System.Drawing.Size(1192, 938);
             this.Load += new System.EventHandler(this.AddPatient_Load);
             this.AddPatientPanel.ResumeLayout(false);
             this.AddPatientPanel.PerformLayout();
@@ -269,7 +257,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtaddr;
         private System.Windows.Forms.TextBox txtcontact;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.ComboBox cmbGender;
