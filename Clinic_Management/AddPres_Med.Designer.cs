@@ -59,7 +59,7 @@
             // 
             // txtmedsearch
             // 
-            this.txtmedsearch.Location = new System.Drawing.Point(251, 101);
+            this.txtmedsearch.Location = new System.Drawing.Point(268, 101);
             this.txtmedsearch.Name = "txtmedsearch";
             this.txtmedsearch.Size = new System.Drawing.Size(708, 26);
             this.txtmedsearch.TabIndex = 1;
@@ -69,9 +69,11 @@
             // 
             this.panelmeds.AutoScroll = true;
             this.panelmeds.AutoSize = true;
-            this.panelmeds.Location = new System.Drawing.Point(251, 133);
+            this.panelmeds.BackColor = System.Drawing.Color.White;
+            this.panelmeds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelmeds.Location = new System.Drawing.Point(268, 133);
             this.panelmeds.Name = "panelmeds";
-            this.panelmeds.Size = new System.Drawing.Size(708, 369);
+            this.panelmeds.Size = new System.Drawing.Size(708, 384);
             this.panelmeds.TabIndex = 2;
             // 
             // button1
@@ -88,9 +90,10 @@
             // 
             this.panelresults.AutoScroll = true;
             this.panelresults.AutoSize = true;
-            this.panelresults.Location = new System.Drawing.Point(251, 538);
+            this.panelresults.BackColor = System.Drawing.Color.White;
+            this.panelresults.Location = new System.Drawing.Point(3, 133);
             this.panelresults.Name = "panelresults";
-            this.panelresults.Size = new System.Drawing.Size(708, 359);
+            this.panelresults.Size = new System.Drawing.Size(244, 384);
             this.panelresults.TabIndex = 5;
             // 
             // AddPres_Med

@@ -79,6 +79,7 @@
             this.AddPatientPanel.Name = "AddPatientPanel";
             this.AddPatientPanel.Size = new System.Drawing.Size(1192, 938);
             this.AddPatientPanel.TabIndex = 1;
+            //this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
             // txtGender
             // 

@@ -26,9 +26,11 @@ namespace Clinic_Management
 
         private void AddPrescription_Load(object sender, EventArgs e)
         {
+            conn.Open();
             adapter = new NpgsqlDataAdapter("select * from Patients where patient_id=" + patient_id, conn);
             ds = new DataSet();
             adapter.Fill(ds);
+            conn.Close();
             txtName.Text = ds.Tables[0].Rows[0]["name"].ToString();
             txtAge.Text = ds.Tables[0].Rows[0]["age"].ToString();
             txtcontact.Text = ds.Tables[0].Rows[0]["contact_no"].ToString();
@@ -45,6 +47,7 @@ namespace Clinic_Management
             cmd.Parameters.AddWithValue("patient_id", patient_id);
             if (cmd.ExecuteNonQuery() > 0)
             {
+                conn.Close();
                 AddPres_Med addmed = new AddPres_Med();
                 this.Controls.Clear();
                 this.Dock = DockStyle.Fill;

@@ -56,15 +56,13 @@ namespace Clinic_Management
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string query = "select * from Patients where name like @search";
-            adapter =new NpgsqlDataAdapter(query, conn);
+            adapter =new NpgsqlDataAdapter("select * from Patients where name like @search", conn);
             adapter.SelectCommand.Parameters.AddWithValue("@search","%"+txtsearch.Text+"%");
             ds = new DataSet();
             adapter.Fill(ds);
+            conn.Close();
             dataGridView1.DataSource = ds.Tables[0];
         }
-
-     
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -83,6 +81,11 @@ namespace Clinic_Management
             this.Controls.Clear();
             this.Dock= DockStyle.Fill;
             this.Controls.Add(addPatient);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
