@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Clinic_Management
 {
     public partial class AddPatient : UserControl
     {
+        NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=2002;Database=Clinic_Management;");
+        NpgsqlCommand cmd;
         public AddPatient()
         {
             InitializeComponent();
@@ -22,89 +25,39 @@ namespace Clinic_Management
             this.AutoScaleMode=AutoScaleMode.None;
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAge_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcontact_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtaddr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
+            conn.Open();
+          cmd=new NpgsqlCommand("insert into Patients(name,age,contact_no,gender) values(@name,@age,@contact_no,@gender);",conn);
+          cmd.Parameters.AddWithValue("@name",txtName.Text);
+            cmd.Parameters.AddWithValue("@age",int.Parse(txtAge.Text));
+            cmd.Parameters.AddWithValue("@contact_no",txtcontact.Text);
+            string gender = cmbGender.Text;
+            cmd.Parameters.AddWithValue("@gender", gender);
+            int i=cmd.ExecuteNonQuery();
+            if (i > 0)
+            {
+                Patient Patient = new Patient();
+                this.Controls.Clear();
+                this.Dock = DockStyle.Fill;
+                this.Controls.Add(Patient);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            Patient Patient = new Patient();
+            this.Controls.Clear();
+            this.Dock = DockStyle.Fill;
+            this.Controls.Add(Patient);
         }
 
-        private void AddPatientPanel_Paint(object sender, PaintEventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
+            txtName.Text = "";
+            txtcontact.Text = "";
+            txtAge.Text = "";
+            cmbGender.SelectedIndex = 0;
         }
     }
 }
