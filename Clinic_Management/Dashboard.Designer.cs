@@ -37,7 +37,9 @@
             // 
             // dashboardPanel
             // 
-            this.dashboardPanel.BackColor = System.Drawing.Color.AliceBlue;
+            this.dashboardPanel.BackColor = System.Drawing.Color.FloralWhite;
+            this.dashboardPanel.BackgroundImage = global::Clinic_Management.Properties.Resources.med2;
+            this.dashboardPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dashboardPanel.Controls.Add(this.button3);
             this.dashboardPanel.Controls.Add(this.btnMedicine);
             this.dashboardPanel.Controls.Add(this.button1);
@@ -52,7 +54,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PowderBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(792, 254);
+            this.button3.Location = new System.Drawing.Point(784, 254);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 127);
             this.button3.TabIndex = 5;
@@ -63,7 +65,7 @@
             // 
             this.btnMedicine.BackColor = System.Drawing.Color.PowderBlue;
             this.btnMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedicine.Location = new System.Drawing.Point(498, 254);
+            this.btnMedicine.Location = new System.Drawing.Point(537, 254);
             this.btnMedicine.Name = "btnMedicine";
             this.btnMedicine.Size = new System.Drawing.Size(174, 127);
             this.btnMedicine.TabIndex = 4;
@@ -75,7 +77,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PowderBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(194, 254);
+            this.button1.Location = new System.Drawing.Point(268, 254);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(174, 127);

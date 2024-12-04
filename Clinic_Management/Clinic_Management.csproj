@@ -243,6 +243,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\medicalBg.avif" />
     <None Include="Resources\password.png" />
   </ItemGroup>
   <ItemGroup>
@@ -256,9 +257,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\contact.png" />
+    <Content Include="Resources\healthcare.jpg" />
+    <None Include="Resources\healthcare1.jpg" />
+    <None Include="Resources\med2.jpeg" />
+    <None Include="Resources\med21.jpeg" />
+    <None Include="Resources\med1.jpg" />
     <Content Include="Resources\medicine.png" />
+    <None Include="Resources\medicine1.jpg" />
+    <None Include="Resources\medicinePageBg.jpeg" />
     <Content Include="Resources\name.png" />
     <Content Include="Resources\patient.png" />
+    <None Include="Resources\pharmacy2.jpeg" />
+    <None Include="Resources\pharmacy.jpeg" />
     <Content Include="Resources\prescription.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

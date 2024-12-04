@@ -16,12 +16,13 @@ namespace Clinic_Management
         public MedicineCommon()
         {
             InitializeComponent();
+            ShowMedicine medicine = new ShowMedicine();
+            switchPage(medicine);
         }
 
         private void Medicine_Load(object sender, EventArgs e)
         {
-            ShowMedicine medicine = new ShowMedicine();
-            switchPage(medicine);
+            
         }
 
         private void medicineInformationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace Clinic_Management
             switchPage(medicine);                     
         }
 
-        private void switchPage(Control Page)
+        public void switchPage(Control Page)
         {
             panel1.Controls.Clear();        
             panel1.Controls.Add(Page);
@@ -40,6 +41,19 @@ namespace Clinic_Management
         {
             AddMedicine addMedicine = new AddMedicine();
             switchPage(addMedicine);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            menuStrip1.Enabled = false;
+            menuStrip1.Visible = false;
+            panel1.Controls.Add(new Dashboard());
         }
     }
 }

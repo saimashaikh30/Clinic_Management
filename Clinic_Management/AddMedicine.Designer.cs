@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +48,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -65,6 +68,27 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.Crimson;
+            this.btnClear.Location = new System.Drawing.Point(669, 504);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(196, 51);
+            this.btnClear.TabIndex = 15;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(647, 405);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(281, 36);
+            this.txtDate.TabIndex = 14;
+            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.SandyBrown;
@@ -80,10 +104,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Clinic_Management.Properties.Resources.medicine;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 176);
+            this.pictureBox1.Image = global::Clinic_Management.Properties.Resources.medicinePageBg;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 148);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(287, 331);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -167,14 +191,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Medicine Name: ";
             // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(647, 405);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(281, 36);
-            this.txtDate.TabIndex = 14;
-            // 
             // AddMedicine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,5 +220,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DateTimePicker txtDate;
+        private System.Windows.Forms.Button btnClear;
     }
 }

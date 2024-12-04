@@ -31,8 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.medicineInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMedicinesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateMedicineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medicineInformationToolStripMenuItem,
             this.addMedicinesToolStripMenuItem,
-            this.updateMedicineToolStripMenuItem});
+            this.dashboardToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -74,15 +74,6 @@
             this.addMedicinesToolStripMenuItem.ToolTipText = "To Add Medicines";
             this.addMedicinesToolStripMenuItem.Click += new System.EventHandler(this.addMedicinesToolStripMenuItem_Click);
             // 
-            // updateMedicineToolStripMenuItem
-            // 
-            this.updateMedicineToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
-            this.updateMedicineToolStripMenuItem.Name = "updateMedicineToolStripMenuItem";
-            this.updateMedicineToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10);
-            this.updateMedicineToolStripMenuItem.Size = new System.Drawing.Size(215, 54);
-            this.updateMedicineToolStripMenuItem.Text = "Update Medicine";
-            this.updateMedicineToolStripMenuItem.ToolTipText = "To Update Medicine Information";
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -90,6 +81,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1060, 692);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dashboardToolStripMenuItem
+            // 
+            this.dashboardToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(140, 54);
+            this.dashboardToolStripMenuItem.Text = "Dashboard";
+            this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
             // MedicineCommon
             // 
@@ -111,7 +111,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem medicineInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addMedicinesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateMedicineToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
     }
 }

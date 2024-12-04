@@ -72,16 +72,17 @@ namespace Clinic_Management
             {
                 string patient_id = dataGridView1.Rows[e.RowIndex].Cells["patient_id"].Value.ToString();
                 AddPrescription addPrescription = new AddPrescription(patient_id);
-                panel1.Controls.Clear();
-                panel1.Controls.Add(addPrescription);
+                this.Controls.Clear();
+                this.Controls.Add(addPrescription);
             }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddPatient addPatient = new AddPatient();
-            panel1.Controls.Clear();
-            panel1.Controls.Add(addPatient);
+            this.Controls.Clear();
+            this.Dock= DockStyle.Fill;
+            this.Controls.Add(addPatient);
         }
     }
 }

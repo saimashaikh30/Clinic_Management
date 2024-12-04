@@ -37,11 +37,39 @@ namespace Clinic_Management
             string companyName=txtCompany.Text;
             int stock=Convert.ToInt32(txtStock.Text);
             string date=txtDate.Text;
-            cmd = new NpgsqlCommand("insert into Medicines(Medicine_Name,Company_Name,Medicine_Stock,Expiry_Date) values ('" +
+
+            if(medicineName == "")
+            {
+                MessageBox.Show("Please enter Medicine name");
+            }
+            else if(companyName == "")
+            {
+                MessageBox.Show("Please enter Company name");
+            }
+            else if (stock.ToString() == "")
+            {
+                MessageBox.Show("Please enter Medicine Stock");
+            }
+            else if (date == "")
+            {
+                MessageBox.Show("Please enter Expiry date");
+            }
+            else
+            {
+                cmd = new NpgsqlCommand("insert into Medicines(Medicine_Name,Company_Name,Medicine_Stock,Expiry_Date) values ('" +
                 medicineName + "', '" + companyName + "', " + stock + ", '" + date + "');", conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Medicine Information Saved Successfully");
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Medicine Information Saved Successfully");
+            }            
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtCompany.Text = "";
+            txtName.Text = "";
+            txtStock.Text = "";
+            txtDate.Text = "";
         }
     }
 }

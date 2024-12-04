@@ -16,10 +16,10 @@ namespace Clinic_Management
         NpgsqlConnection con =new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=2002;Database=Clinic_Management;");
         NpgsqlDataAdapter adapter;
         DataSet ds;
+        
         public ShowMedicine()
         {
-            InitializeComponent();
-               
+            InitializeComponent();            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -38,12 +38,12 @@ namespace Clinic_Management
             };
             link.DisplayIndex = dataGridView1.Columns.Count;
             dataGridView1.Columns.Add(link);
-            con.Close();
+            //con.Close();
         }
 
         private void ShowMedicine_Load(object sender, EventArgs e)
         {
-            con.Open();
+            //con.Open();
             adapter = new NpgsqlDataAdapter("select * from Medicines;", con);
             ds = new DataSet();
             adapter.Fill(ds);
@@ -56,13 +56,14 @@ namespace Clinic_Management
         {
             if (e.ColumnIndex == dataGridView1.Columns["updateLink"].Index && e.RowIndex >= 0)
             {
+                int medicineId = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Medicine_Id"].Value.ToString());
                 string medicineName = dataGridView1.Rows[e.RowIndex].Cells["Medicine_Name"].Value.ToString ();
                 string companyName = dataGridView1.Rows[e.RowIndex].Cells["Company_Name"].Value.ToString();
-                string stock = dataGridView1.Rows[e.RowIndex].Cells["Medicine_Stock"].Value.ToString();
+                int stock = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Medicine_Stock"].Value.ToString());
                 string expiryDate = dataGridView1.Rows[e.RowIndex].Cells["Expiry_Date"].Value.ToString();
 
                 UpdateMedicine updateMedicine = new UpdateMedicine();
-                updateMedicine.setDetails(medicineName,companyName,stock,expiryDate);
+                updateMedicine.setDetails(medicineId,medicineName,companyName,stock,expiryDate);
                 panelShowMedicine.Controls.Clear();
                 panelShowMedicine.Controls.Add(updateMedicine);
 
@@ -71,7 +72,7 @@ namespace Clinic_Management
 
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
-            con.Open();
+            //con.Open();
             string medicineName = txtSearch.Text;
             adapter = new NpgsqlDataAdapter("select * from Medicines where Medicine_Name like '" + medicineName + "';", con);
             ds = new DataSet();

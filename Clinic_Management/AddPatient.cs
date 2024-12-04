@@ -19,7 +19,7 @@ namespace Clinic_Management
 
         private void AddPatient_Load(object sender, EventArgs e)
         {
-
+            this.AutoScaleMode=AutoScaleMode.None;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -98,6 +98,11 @@ namespace Clinic_Management
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
