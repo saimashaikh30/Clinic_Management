@@ -153,6 +153,12 @@
     <Compile Include="AddPrescription.Designer.cs">
       <DependentUpon>AddPrescription.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdmitPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmitPatient.Designer.cs">
+      <DependentUpon>AdmitPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddPrescription.resx">
       <DependentUpon>AddPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmitPatient.resx">
+      <DependentUpon>AdmitPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -262,6 +271,7 @@
     <None Include="Resources\med2.jpeg" />
     <None Include="Resources\med21.jpeg" />
     <None Include="Resources\med1.jpg" />
+    <None Include="Resources\home.png" />
     <Content Include="Resources\medicine.png" />
     <None Include="Resources\medicine1.jpg" />
     <None Include="Resources\medicinePageBg.jpeg" />

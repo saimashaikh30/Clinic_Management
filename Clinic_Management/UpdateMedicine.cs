@@ -70,6 +70,12 @@ namespace Clinic_Management
             txtStock.Text=stock.ToString();
             txtDate.Text=expiryDate.ToString();
             this.medicineId = medicineId;
-        } 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(new ShowMedicine());
+        }
     }
 }

@@ -60,6 +60,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "In-House Details";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnMedicine
             // 
@@ -76,6 +77,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PowderBlue;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(268, 254);
             this.button1.Name = "button1";

@@ -40,5 +40,12 @@ namespace Clinic_Management
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdmitPatient admitPatient = new AdmitPatient();
+            dashboardPanel.Controls.Clear();
+            dashboardPanel.Controls.Add(admitPatient);
+        }
     }
 }
