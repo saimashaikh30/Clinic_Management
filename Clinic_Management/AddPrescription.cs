@@ -51,5 +51,13 @@ namespace Clinic_Management
                 this.Controls.Add(addmed);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Patient patient = new Patient();
+            this.Controls.Clear();
+            this.Dock = DockStyle.Fill;
+            this.Controls.Add(patient);
+        }
     }
 }

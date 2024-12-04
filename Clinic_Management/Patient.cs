@@ -84,10 +84,5 @@ namespace Clinic_Management
             this.Dock= DockStyle.Fill;
             this.Controls.Add(addPatient);
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
