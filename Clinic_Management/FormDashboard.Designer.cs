@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.dashboardPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInHouse = new System.Windows.Forms.Button();
             this.btnMedicine = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPatient = new System.Windows.Forms.Button();
             this.dashboardPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,25 +42,25 @@
             this.dashboardPanel.BackColor = System.Drawing.Color.FloralWhite;
             this.dashboardPanel.BackgroundImage = global::Clinic_Management.Properties.Resources.med2;
             this.dashboardPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.dashboardPanel.Controls.Add(this.button3);
+            this.dashboardPanel.Controls.Add(this.btnInHouse);
             this.dashboardPanel.Controls.Add(this.btnMedicine);
-            this.dashboardPanel.Controls.Add(this.button1);
+            this.dashboardPanel.Controls.Add(this.btnPatient);
             this.dashboardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardPanel.Location = new System.Drawing.Point(0, 0);
             this.dashboardPanel.Name = "dashboardPanel";
             this.dashboardPanel.Size = new System.Drawing.Size(1042, 703);
             this.dashboardPanel.TabIndex = 1;
             // 
-            // button3
+            // btnInHouse
             // 
-            this.button3.BackColor = System.Drawing.Color.PowderBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(784, 254);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 127);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "In-House Details";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnInHouse.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnInHouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInHouse.Location = new System.Drawing.Point(784, 254);
+            this.btnInHouse.Name = "btnInHouse";
+            this.btnInHouse.Size = new System.Drawing.Size(174, 127);
+            this.btnInHouse.TabIndex = 5;
+            this.btnInHouse.Text = "In-House Details";
+            this.btnInHouse.UseVisualStyleBackColor = false;
             // 
             // btnMedicine
             // 
@@ -74,18 +74,19 @@
             this.btnMedicine.UseVisualStyleBackColor = false;
             this.btnMedicine.Click += new System.EventHandler(this.btnMedicine_Click);
             // 
-            // button1
+            // btnPatient
             // 
-            this.button1.BackColor = System.Drawing.Color.PowderBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(268, 254);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(174, 127);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Patient Info";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPatient.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnPatient.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatient.Location = new System.Drawing.Point(268, 254);
+            this.btnPatient.Name = "btnPatient";
+            this.btnPatient.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnPatient.Size = new System.Drawing.Size(174, 127);
+            this.btnPatient.TabIndex = 3;
+            this.btnPatient.Text = "Patient Info";
+            this.btnPatient.UseVisualStyleBackColor = false;
+            this.btnPatient.Click += new System.EventHandler(this.btnPatient_Click);
             // 
             // FormDashboard
             // 
@@ -105,8 +106,8 @@
         #endregion
 
         private System.Windows.Forms.Panel dashboardPanel;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInHouse;
         private System.Windows.Forms.Button btnMedicine;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPatient;
     }
 }

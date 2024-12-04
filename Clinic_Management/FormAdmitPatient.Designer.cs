@@ -1,13 +1,13 @@
 ﻿namespace Clinic_Management
 {
-    partial class AdmitPatient
+    partial class FormAdmitPatient
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -47,9 +47,8 @@
             this.panelAdmit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdmit.Location = new System.Drawing.Point(0, 0);
             this.panelAdmit.Name = "panelAdmit";
-            this.panelAdmit.Size = new System.Drawing.Size(1060, 750);
-            this.panelAdmit.TabIndex = 0;
-            this.panelAdmit.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdmit_Paint);
+            this.panelAdmit.Size = new System.Drawing.Size(1042, 703);
+            this.panelAdmit.TabIndex = 1;
             // 
             // btnDashboard
             // 
@@ -74,7 +73,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(969, 394);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -85,16 +83,16 @@
             this.label1.Size = new System.Drawing.Size(388, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admitted Patient Information";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // AdmitPatient
+            // FormAdmitPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1042, 703);
             this.Controls.Add(this.panelAdmit);
-            this.Name = "AdmitPatient";
-            this.Size = new System.Drawing.Size(1060, 750);
-            this.Load += new System.EventHandler(this.AdmitPatient_Load);
+            this.Name = "FormAdmitPatient";
+            this.Text = "Admit Patient Information";
+            this.Load += new System.EventHandler(this.FormAdmitPatient_Load);
             this.panelAdmit.ResumeLayout(false);
             this.panelAdmit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -106,8 +104,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panelAdmit;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

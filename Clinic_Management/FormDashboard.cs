@@ -22,12 +22,22 @@ namespace Clinic_Management
 
         }
 
+        private void ShowForm(Form form)
+        {
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
         private void btnMedicine_Click(object sender, EventArgs e)
         {
             medicineForm f=new medicineForm();
-            this.Hide();
-            f.ShowDialog();
-            this.Close();   
+            ShowForm(f);
+        }
+
+        private void btnPatient_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormPatient());
         }
     }
 }

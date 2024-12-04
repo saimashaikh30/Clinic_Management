@@ -1,13 +1,13 @@
 ﻿namespace Clinic_Management
 {
-    partial class AddPres_Med
+    partial class FormAddPres_Med
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,20 +20,20 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtmedsearch = new System.Windows.Forms.TextBox();
-            this.panelmeds = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelresults = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.panelmeds = new System.Windows.Forms.Panel();
+            this.txtmedsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,11 +41,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
             this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 61);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1042, 61);
+            this.panel1.TabIndex = 6;
             // 
             // label6
             // 
@@ -58,14 +59,28 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Add Medicine";
             // 
-            // txtmedsearch
+            // panelresults
             // 
-            this.txtmedsearch.Location = new System.Drawing.Point(238, 81);
-            this.txtmedsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmedsearch.Name = "txtmedsearch";
-            this.txtmedsearch.Size = new System.Drawing.Size(630, 22);
-            this.txtmedsearch.TabIndex = 1;
-            this.txtmedsearch.TextChanged += new System.EventHandler(this.txtmedsearch_TextChanged);
+            this.panelresults.AutoScroll = true;
+            this.panelresults.AutoSize = true;
+            this.panelresults.BackColor = System.Drawing.Color.White;
+            this.panelresults.Location = new System.Drawing.Point(12, 152);
+            this.panelresults.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelresults.Name = "panelresults";
+            this.panelresults.Size = new System.Drawing.Size(217, 307);
+            this.panelresults.TabIndex = 10;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAdd.Location = new System.Drawing.Point(923, 80);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(107, 45);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panelmeds
             // 
@@ -73,48 +88,34 @@
             this.panelmeds.AutoSize = true;
             this.panelmeds.BackColor = System.Drawing.Color.White;
             this.panelmeds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelmeds.Location = new System.Drawing.Point(238, 106);
+            this.panelmeds.Location = new System.Drawing.Point(265, 152);
             this.panelmeds.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelmeds.Name = "panelmeds";
             this.panelmeds.Size = new System.Drawing.Size(630, 308);
-            this.panelmeds.TabIndex = 2;
+            this.panelmeds.TabIndex = 8;
             // 
-            // button1
+            // txtmedsearch
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.Location = new System.Drawing.Point(910, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtmedsearch.Location = new System.Drawing.Point(265, 80);
+            this.txtmedsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtmedsearch.Name = "txtmedsearch";
+            this.txtmedsearch.Size = new System.Drawing.Size(630, 22);
+            this.txtmedsearch.TabIndex = 7;
+            this.txtmedsearch.TextChanged += new System.EventHandler(this.txtmedsearch_TextChanged);
             // 
-            // panelresults
-            // 
-            this.panelresults.AutoScroll = true;
-            this.panelresults.AutoSize = true;
-            this.panelresults.BackColor = System.Drawing.Color.White;
-            this.panelresults.Location = new System.Drawing.Point(3, 106);
-            this.panelresults.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelresults.Name = "panelresults";
-            this.panelresults.Size = new System.Drawing.Size(217, 307);
-            this.panelresults.TabIndex = 5;
-            // 
-            // AddPres_Med
+            // FormAddPres_Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(1042, 703);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelresults);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panelmeds);
             this.Controls.Add(this.txtmedsearch);
-            this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AddPres_Med";
-            this.Size = new System.Drawing.Size(1060, 750);
+            this.Name = "FormAddPres_Med";
+            this.Text = "Add Medicine Prescription";
+            this.Load += new System.EventHandler(this.FormAddPres_Med_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -126,9 +127,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtmedsearch;
-        private System.Windows.Forms.Panel panelmeds;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel panelresults;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Panel panelmeds;
+        private System.Windows.Forms.TextBox txtmedsearch;
     }
 }

@@ -83,6 +83,7 @@
             // 
             // panel3
             // 
+            this.panel3.AutoSize = true;
             this.panel3.BackgroundImage = global::Clinic_Management.Properties.Resources.images;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel4);
@@ -206,6 +207,7 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
