@@ -47,8 +47,10 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BackgroundImage = global::Clinic_Management.Properties.Resources.med1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.btnSave);
@@ -86,8 +88,9 @@
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Location = new System.Drawing.Point(647, 405);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(281, 36);
+            this.txtDate.Size = new System.Drawing.Size(356, 36);
             this.txtDate.TabIndex = 14;
+            this.txtDate.ValueChanged += new System.EventHandler(this.txtDate_ValueChanged);
             // 
             // btnSave
             // 
@@ -107,14 +110,16 @@
             this.pictureBox1.Image = global::Clinic_Management.Properties.Resources.medicinePageBg;
             this.pictureBox1.Location = new System.Drawing.Point(29, 148);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 331);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 377);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.ForestGreen;
             this.label1.Location = new System.Drawing.Point(383, 15);
@@ -122,26 +127,30 @@
             this.label1.Size = new System.Drawing.Size(254, 39);
             this.label1.TabIndex = 11;
             this.label1.Text = "Add Medicines";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtCompany
             // 
             this.txtCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompany.Location = new System.Drawing.Point(647, 215);
             this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(281, 36);
+            this.txtCompany.Size = new System.Drawing.Size(356, 36);
             this.txtCompany.TabIndex = 10;
+            this.txtCompany.TextChanged += new System.EventHandler(this.txtCompany_TextChanged);
             // 
             // txtStock
             // 
             this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStock.Location = new System.Drawing.Point(647, 319);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(281, 36);
+            this.txtStock.Size = new System.Drawing.Size(356, 36);
             this.txtStock.TabIndex = 8;
+            this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(385, 412);
@@ -149,10 +158,12 @@
             this.label5.Size = new System.Drawing.Size(170, 29);
             this.label5.TabIndex = 7;
             this.label5.Text = "Expiry Date: ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(385, 319);
@@ -160,10 +171,12 @@
             this.label4.Size = new System.Drawing.Size(98, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Stock: ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(385, 222);
@@ -171,25 +184,30 @@
             this.label3.Size = new System.Drawing.Size(225, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "Company Name: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(647, 126);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(281, 36);
+            this.txtName.Size = new System.Drawing.Size(356, 36);
             this.txtName.TabIndex = 4;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(385, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Medicine Name: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddMedicine
             // 
@@ -203,6 +221,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

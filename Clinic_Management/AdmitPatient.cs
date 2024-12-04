@@ -27,5 +27,10 @@ namespace Clinic_Management
             this.Controls.Clear();
             this.Controls.Add(new Dashboard());
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

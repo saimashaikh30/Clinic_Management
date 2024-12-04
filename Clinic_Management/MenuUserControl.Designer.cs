@@ -1,6 +1,6 @@
 ﻿namespace Clinic_Management
 {
-    partial class MedicineCommon
+    partial class MenuUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,7 +32,6 @@
             this.medicineInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMedicinesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,8 +50,9 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1060, 58);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // medicineInformationToolStripMenuItem
             // 
@@ -85,25 +85,13 @@
             this.dashboardToolStripMenuItem.Text = "Dashboard";
             this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
-            // panel1
-            // 
-            this.panel1.AutoSize = true;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 692);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // MedicineCommon
+            // MenuUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "MedicineCommon";
-            this.Size = new System.Drawing.Size(1060, 750);
-            this.Load += new System.EventHandler(this.Medicine_Load);
+            this.Name = "MenuUserControl";
+            this.Size = new System.Drawing.Size(1060, 63);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -112,10 +100,10 @@
         }
 
         #endregion
+
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem medicineInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addMedicinesToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
     }
 }

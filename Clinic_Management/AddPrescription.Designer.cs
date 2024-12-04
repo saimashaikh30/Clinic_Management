@@ -57,6 +57,7 @@
             // 
             // AddPatientPanel
             // 
+            this.AddPatientPanel.AutoSize = true;
             this.AddPatientPanel.BackColor = System.Drawing.Color.PowderBlue;
             this.AddPatientPanel.Controls.Add(this.txtGender);
             this.AddPatientPanel.Controls.Add(this.txtQuantity);
@@ -325,6 +326,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -18,6 +18,8 @@ namespace Clinic_Management
         public AddMedicine()
         {
             InitializeComponent();
+            
+
         }
 
         private void AddMedicine_Load(object sender, EventArgs e)
@@ -70,6 +72,56 @@ namespace Clinic_Management
             txtName.Text = "";
             txtStock.Text = "";
             txtDate.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCompany_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

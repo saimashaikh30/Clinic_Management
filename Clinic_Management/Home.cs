@@ -22,11 +22,15 @@ namespace Clinic_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FormDashboard d = new FormDashboard();
+            this.Hide();
+            d.ShowDialog();
+            this.Close();
             //if (txtUsername.Text == "Admin" && txtPassword.Text == "Admin123")
             //{
-                Dashboard dashboard = new Dashboard();
-                panel1.Controls.Clear();
-                panel1.Controls.Add(dashboard);
+                //Dashboard dashboard = new Dashboard();
+                //panel1.Controls.Clear();
+                //panel1.Controls.Add(dashboard);
             //}
         }
 

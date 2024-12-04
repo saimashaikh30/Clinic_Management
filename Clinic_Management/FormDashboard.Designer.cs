@@ -1,13 +1,13 @@
 ﻿namespace Clinic_Management
 {
-    partial class Dashboard
+    partial class FormDashboard
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -37,9 +37,6 @@
             // 
             // dashboardPanel
             // 
-            this.dashboardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dashboardPanel.AutoScroll = true;
             this.dashboardPanel.AutoSize = true;
             this.dashboardPanel.BackColor = System.Drawing.Color.FloralWhite;
@@ -48,11 +45,11 @@
             this.dashboardPanel.Controls.Add(this.button3);
             this.dashboardPanel.Controls.Add(this.btnMedicine);
             this.dashboardPanel.Controls.Add(this.button1);
+            this.dashboardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardPanel.Location = new System.Drawing.Point(0, 0);
             this.dashboardPanel.Name = "dashboardPanel";
-            this.dashboardPanel.Size = new System.Drawing.Size(1060, 750);
-            this.dashboardPanel.TabIndex = 0;
-            this.dashboardPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardPanel_Paint);
+            this.dashboardPanel.Size = new System.Drawing.Size(1042, 703);
+            this.dashboardPanel.TabIndex = 1;
             // 
             // button3
             // 
@@ -64,7 +61,6 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "In-House Details";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnMedicine
             // 
@@ -90,16 +86,16 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Patient Info";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Dashboard
+            // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1042, 703);
             this.Controls.Add(this.dashboardPanel);
-            this.Name = "Dashboard";
-            this.Size = new System.Drawing.Size(1060, 750);
-            this.Load += new System.EventHandler(this.Dash_Load);
+            this.Name = "FormDashboard";
+            this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.dashboardPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
