@@ -37,23 +37,25 @@
             // 
             // dashboardPanel
             // 
+            this.dashboardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dashboardPanel.AutoScroll = true;
-            this.dashboardPanel.AutoSize = true;
+            this.dashboardPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.dashboardPanel.BackColor = System.Drawing.Color.FloralWhite;
             this.dashboardPanel.BackgroundImage = global::Clinic_Management.Properties.Resources.med2;
             this.dashboardPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dashboardPanel.Controls.Add(this.btnInHouse);
             this.dashboardPanel.Controls.Add(this.btnMedicine);
             this.dashboardPanel.Controls.Add(this.btnPatient);
-            this.dashboardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardPanel.Location = new System.Drawing.Point(0, 0);
             this.dashboardPanel.Name = "dashboardPanel";
             this.dashboardPanel.Size = new System.Drawing.Size(1042, 703);
             this.dashboardPanel.TabIndex = 1;
-            //this.dashboardPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardPanel_Paint);
             // 
             // btnInHouse
             // 
+            this.btnInHouse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnInHouse.BackColor = System.Drawing.Color.PowderBlue;
             this.btnInHouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInHouse.Location = new System.Drawing.Point(784, 254);
@@ -66,6 +68,7 @@
             // 
             // btnMedicine
             // 
+            this.btnMedicine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMedicine.BackColor = System.Drawing.Color.PowderBlue;
             this.btnMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedicine.Location = new System.Drawing.Point(537, 254);
@@ -78,6 +81,7 @@
             // 
             // btnPatient
             // 
+            this.btnPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPatient.BackColor = System.Drawing.Color.PowderBlue;
             this.btnPatient.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,7 +105,6 @@
             this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.dashboardPanel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -18,14 +18,14 @@ namespace Clinic_Management
         public FormAddMedicine()
         {
             InitializeComponent();
-            MenuUserControl menuUserControl = new MenuUserControl();
-            menuUserControl.Dock = DockStyle.Top;
-            this.Controls.Add(menuUserControl);
+            
         }
 
         private void FormAddMedicine_Load(object sender, EventArgs e)
         {
-
+            MenuUserControl menuUserControl = new MenuUserControl();
+            menuUserControl.Dock = DockStyle.Top;
+            this.Controls.Add(menuUserControl);
         }
 
         private void btnSave_Click(object sender, EventArgs e)

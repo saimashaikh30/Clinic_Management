@@ -80,5 +80,10 @@ namespace Clinic_Management
                 this.Close();
             }
         }
+
+        private void panelShowMedicine_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

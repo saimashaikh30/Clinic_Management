@@ -38,13 +38,15 @@
             // 
             // panelAdmit
             // 
-            this.panelAdmit.AutoSize = true;
+            this.panelAdmit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelAdmit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelAdmit.BackgroundImage = global::Clinic_Management.Properties.Resources.medicine1;
             this.panelAdmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelAdmit.Controls.Add(this.btnDashboard);
             this.panelAdmit.Controls.Add(this.dataGridView1);
             this.panelAdmit.Controls.Add(this.label1);
-            this.panelAdmit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdmit.Location = new System.Drawing.Point(0, 0);
             this.panelAdmit.Name = "panelAdmit";
             this.panelAdmit.Size = new System.Drawing.Size(1042, 703);
@@ -52,6 +54,7 @@
             // 
             // btnDashboard
             // 
+            this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDashboard.BackColor = System.Drawing.Color.FloralWhite;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -66,6 +69,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(43, 105);
             this.dataGridView1.Name = "dataGridView1";
@@ -76,6 +82,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(310, 20);
@@ -97,7 +104,6 @@
             this.panelAdmit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
