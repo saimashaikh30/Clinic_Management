@@ -50,6 +50,7 @@
             this.dashboardPanel.Name = "dashboardPanel";
             this.dashboardPanel.Size = new System.Drawing.Size(1042, 703);
             this.dashboardPanel.TabIndex = 1;
+            //this.dashboardPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardPanel_Paint);
             // 
             // btnInHouse
             // 
@@ -61,6 +62,7 @@
             this.btnInHouse.TabIndex = 5;
             this.btnInHouse.Text = "In-House Details";
             this.btnInHouse.UseVisualStyleBackColor = false;
+            this.btnInHouse.Click += new System.EventHandler(this.btnInHouse_Click);
             // 
             // btnMedicine
             // 

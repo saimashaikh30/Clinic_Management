@@ -61,5 +61,10 @@ namespace Clinic_Management
             txtAge.Text = "";
             cmbGender.SelectedIndex = 0;
         }
+
+        private void AddPatientPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

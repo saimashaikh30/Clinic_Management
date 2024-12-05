@@ -39,5 +39,10 @@ namespace Clinic_Management
         {
             ShowForm(new FormPatient());
         }
+
+        private void btnInHouse_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormAdmitPatient());
+        }
     }
 }

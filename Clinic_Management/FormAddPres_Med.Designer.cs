@@ -39,9 +39,10 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -50,6 +51,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
@@ -61,6 +63,8 @@
             // 
             // panelresults
             // 
+            this.panelresults.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelresults.AutoScroll = true;
             this.panelresults.AutoSize = true;
             this.panelresults.BackColor = System.Drawing.Color.White;
@@ -72,6 +76,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.CadetBlue;
             this.btnAdd.Location = new System.Drawing.Point(923, 80);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -84,6 +89,9 @@
             // 
             // panelmeds
             // 
+            this.panelmeds.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelmeds.AutoScroll = true;
             this.panelmeds.AutoSize = true;
             this.panelmeds.BackColor = System.Drawing.Color.White;
@@ -96,6 +104,8 @@
             // 
             // txtmedsearch
             // 
+            this.txtmedsearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtmedsearch.Location = new System.Drawing.Point(265, 80);
             this.txtmedsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmedsearch.Name = "txtmedsearch";

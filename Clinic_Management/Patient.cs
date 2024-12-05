@@ -69,7 +69,7 @@ namespace Clinic_Management
             if(e.ColumnIndex == dataGridView1.Columns["Prescription"].Index && e.RowIndex >= 0)
             {
                 string patient_id = dataGridView1.Rows[e.RowIndex].Cells["patient_id"].Value.ToString();
-                AddPrescription addPrescription = new AddPrescription(patient_id);
+                FormAddPrescription addPrescription = new FormAddPrescription(patient_id);
                 this.Controls.Clear();
                 this.Controls.Add(addPrescription);
             }
@@ -77,10 +77,9 @@ namespace Clinic_Management
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddPatient addPatient = new AddPatient();
-            this.Controls.Clear();
-            this.Dock= DockStyle.Fill;
-            this.Controls.Add(addPatient);
+            FormAddPatient d = new FormAddPatient();
+            this.Hide();
+            d.ShowDialog();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

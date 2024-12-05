@@ -69,6 +69,7 @@
             this.AddPatientPanel.Name = "AddPatientPanel";
             this.AddPatientPanel.Size = new System.Drawing.Size(982, 703);
             this.AddPatientPanel.TabIndex = 1;
+            this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
             // btnSave
             // 

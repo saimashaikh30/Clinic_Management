@@ -15,28 +15,44 @@ namespace Clinic_Management
     {
         NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=2002;Database=Clinic_Management;");
         NpgsqlDataAdapter adapter;
-        DataSet ds;
-        NpgsqlCommand cmd;
+        private DataGridView dgvmeds;
+
         public FormAddPres_Med()
         {
             InitializeComponent();
             txtmedsearch.TextChanged += txtmedsearch_TextChanged;
+            InitializeDataGridView();
         }
 
         private void FormAddPres_Med_Load(object sender, EventArgs e)
         {
+            LoadAllMedicines(); 
+        }
 
+        private void InitializeDataGridView()
+        {
+            dgvmeds = new DataGridView
+            {
+                Location = new Point(5, 5),
+                Width = panelmeds.Width - 10,
+                Height = panelmeds.Height - 10,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                AllowUserToDeleteRows = false,
+                Dock = DockStyle.Fill,
+            };
+            dgvmeds.CellClick += DgvMedicines_CellClick;
+
+           
+            panelmeds.Controls.Add(dgvmeds);
         }
 
         private void txtmedsearch_TextChanged(object sender, EventArgs e)
         {
             string query = txtmedsearch.Text.Trim();
-            if (string.IsNullOrEmpty(query))
-            {
-                panelmeds.Controls.Clear();
-            }
             DataTable table = fetchdata(query);
-            populatepanel(table);
+            dgvmeds.DataSource = table; 
         }
 
         private DataTable fetchdata(string query)
@@ -45,43 +61,51 @@ namespace Clinic_Management
             {
                 conn.Open();
             }
-            adapter = new NpgsqlDataAdapter("select * from Medicines where medicine_name like @medicine || '%'", conn);
-            adapter.SelectCommand.Parameters.AddWithValue("@medicine", query);
+
+            string sqlQuery;
+            if (string.IsNullOrEmpty(query))
+            {
+                sqlQuery = "SELECT * FROM Medicines"; 
+            }
+            else
+            {
+                sqlQuery = "SELECT medicine_id, medicine_name FROM Medicines WHERE medicine_name LIKE @medicine || '%'";
+            }
+
+            adapter = new NpgsqlDataAdapter(sqlQuery, conn);
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                adapter.SelectCommand.Parameters.AddWithValue("@medicine", query);
+            }
+
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
             return dataTable;
         }
 
-        private void populatepanel(DataTable dataTable)
+        private void LoadAllMedicines()
         {
-            panelmeds.Controls.Clear();
-            int y = 0;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                Label label = new Label()
-                {
-                    Text = row["medicine_name"].ToString(),
-                    AutoSize = false,
-                    Width = panelmeds.Width - 10,
-                    Height = 30,
-                    Location = new Point(5, y),
-                    ForeColor = Color.Black
-                };
-                label.Click += (s, e) => clickfunc();
-                panelmeds.Controls.Add(label);
-                y = y + 5;
-            }
-
+           
+            DataTable table = fetchdata(""); 
+            dgvmeds.DataSource = table;
         }
 
-        private void clickfunc()
+        private void DgvMedicines_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0) 
+            {
+                DataGridViewRow row = dgvmeds.Rows[e.RowIndex];
+                int medicineId = Convert.ToInt32(row.Cells["medicine_id"].Value);
+                string medicineName = row.Cells["medicine_name"].Value.ToString();
 
+                MessageBox.Show($"Selected Medicine:\nID: {medicineId}\nName: {medicineName}");
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

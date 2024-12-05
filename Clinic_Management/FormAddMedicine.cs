@@ -69,5 +69,10 @@ namespace Clinic_Management
             txtStock.Text = "";
             txtDate.Text = "";
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

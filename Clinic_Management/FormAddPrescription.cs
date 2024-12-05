@@ -62,5 +62,10 @@ namespace Clinic_Management
             formPatient.ShowDialog();
             this.Close();
         }
+
+        private void AddPatientPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

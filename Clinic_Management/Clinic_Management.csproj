@@ -135,42 +135,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMedicine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddMedicine.Designer.cs">
-      <DependentUpon>AddMedicine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddPatient.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddPatient.Designer.cs">
-      <DependentUpon>AddPatient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddPrescription.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddPrescription.Designer.cs">
-      <DependentUpon>AddPrescription.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddPres_Med.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddPres_Med.Designer.cs">
-      <DependentUpon>AddPres_Med.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AdmitPatient.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AdmitPatient.Designer.cs">
-      <DependentUpon>AdmitPatient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAddMedicine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,12 +195,6 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicineCommon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MedicineCommon.Designer.cs">
-      <DependentUpon>MedicineCommon.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -251,36 +209,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowMedicine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ShowMedicine.Designer.cs">
-      <DependentUpon>ShowMedicine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UpdateMedicine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UpdateMedicine.Designer.cs">
-      <DependentUpon>UpdateMedicine.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AddMedicine.resx">
-      <DependentUpon>AddMedicine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddPatient.resx">
-      <DependentUpon>AddPatient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddPrescription.resx">
-      <DependentUpon>AddPrescription.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddPres_Med.resx">
-      <DependentUpon>AddPres_Med.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdmitPatient.resx">
-      <DependentUpon>AdmitPatient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormAddMedicine.resx">
       <DependentUpon>FormAddMedicine.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,9 +239,6 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MedicineCommon.resx">
-      <DependentUpon>MedicineCommon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuUserControl.resx">
       <DependentUpon>MenuUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,12 +255,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ShowMedicine.resx">
-      <DependentUpon>ShowMedicine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateMedicine.resx">
-      <DependentUpon>UpdateMedicine.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

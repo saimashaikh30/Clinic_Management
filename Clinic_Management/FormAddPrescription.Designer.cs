@@ -276,6 +276,7 @@
             this.AddPatientPanel.Name = "AddPatientPanel";
             this.AddPatientPanel.Size = new System.Drawing.Size(1042, 703);
             this.AddPatientPanel.TabIndex = 2;
+            this.AddPatientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddPatientPanel_Paint);
             // 
             // FormAddPrescription
             // 
